@@ -24,42 +24,12 @@
     <ClCompile Include="User.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Book.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Electronic.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Fashion.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Houseware.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="SignUp.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Admin.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="User.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Book.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Electronic.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Fashion.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Houseware.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="SignUp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
