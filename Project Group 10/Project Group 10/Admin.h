@@ -7,6 +7,13 @@ using namespace std;
 #include "Fashion.h"
 #include "Houseware.h"
 
+
+#define __BOOK ".Book.csv"
+#define __ELECTRONIC ".Electronic.csv"
+#define __FASHION ".Fashion.csv"
+#define __HOUSEWARE ".Houseware.csv"
+
+
 class Admin
 {
 private:
@@ -16,5 +23,6 @@ private:
 public:
 	void editItem();
 	void removeItem();
+	void add();
 };
 
