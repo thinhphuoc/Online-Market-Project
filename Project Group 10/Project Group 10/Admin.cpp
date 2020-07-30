@@ -1,5 +1,4 @@
 #include "Admin.h"
-
 void Admin::editItem() {
 	int choose;
 	cout << "Choose type Item to edit" << endl;
@@ -33,7 +32,6 @@ void Admin::editItem() {
 	}
 	}
 }
-
 void Admin::removeItem() {
 	int choose;
 	Houseware H;
@@ -71,7 +69,6 @@ void Admin::removeItem() {
 	}
 	}
 }
-
 void Admin::add()
 {
 	int choose;
@@ -114,4 +111,33 @@ void Admin::add()
 		break;
 	}
 	}
+}
+
+void Admin:: SaveInforAdmin(string a, string b, string c) {
+	name = a;
+	username = b;
+	password = c;
+}
+
+bool Admin::CheckLogin(string a, string b) {
+	if (a == this->username && b == this->password) return 1;
+	return 0;
+}
+
+void Admin::Welcome() {
+	cout << "Hello " << this->name << endl;
+}
+
+
+
+///////////////////////////////////////////////////////
+// chay cac chuc nang cua admin o day nhaaaa
+// a la admin nhe
+void Run_program_of_admin(Admin a) {
+	system("cls");
+	a.Welcome();
+
+
+	//...........................//
+
 }

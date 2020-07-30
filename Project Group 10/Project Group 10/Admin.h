@@ -13,16 +13,20 @@ using namespace std;
 #define __FASHION ".Fashion.csv"
 #define __HOUSEWARE ".Houseware.csv"
 
-
 class Admin
 {
 private:
 	string name;
-	string usename;
+	string username;
 	string password;
 public:
 	void editItem();
 	void removeItem();
 	void add();
+	void SaveInforAdmin(string, string, string);
+	bool CheckLogin(string,string);
+	void Welcome();
+
 };
 
+void Run_program_of_admin(Admin a);
