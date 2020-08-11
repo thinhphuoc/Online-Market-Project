@@ -1,9 +1,0 @@
-số lượng
-
-Full Name
-username
-password
-Age
-Gender
-Address
-Money 
