@@ -9,16 +9,20 @@ private:
 	string password;
 	int age;
 	string gender;
+	string phoneNumbers;
 	string address;
 	float money;
+	int numDayBlock;
 public:
 	User() {
 		age = 0;
 		money = 0;
+		numDayBlock = 0;
 	}
 	bool CheckLogin(string, string);
-	void SaveInforUser(string, string, string, int, string, string, float);
+	void SaveInforUser(string, string, string, int,string, string, string, float,int);
 	void Welcome();
+	void editProfile();
 
 };
 

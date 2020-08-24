@@ -1,6 +1,6 @@
 #include "SignUp.h"
 void Sign_Up() {
-	string s[6];
+	string s[7];
 	int num;
 	cout << "Sign-up" << endl;
 	cout << "---------------------------" << endl;
@@ -19,8 +19,10 @@ void Sign_Up() {
 	if (num == 1) s[4] = "Male";
 	else s[4] = "Female";
 	cin.ignore();
-	cout << ">> Address: ";
+	cout << ">> Phone numbers: ";
 	getline(cin, s[5]);
+	cout << ">> Address: ";
+	getline(cin, s[6]);
 	num = 0;
 	string a;
 	ifstream fi;
@@ -34,10 +36,10 @@ void Sign_Up() {
 	else {
 		if (num == 0) {
 			fo << 1 << endl << endl;
-			for (int i = 0; i < 6; i++) {
+			for (int i = 0; i < 7; i++) {
 				fo << s[i] << endl;
 			}
-			fo << 0 << endl;
+			fo << 0 << endl<<0 << endl;
 		}
 		else {
 			fo << num + 1;
@@ -45,14 +47,13 @@ void Sign_Up() {
 				getline(fi, a);
 				fo << a << endl;
 			}
-			for (int i = 0; i < 6; i++) {
+			for (int i = 0; i < 7; i++) {
 				fo << s[i] << endl;
 
 			}
-			fo << 0 << endl;
+			fo << 0 << endl<<0<<endl;
 		}
 		cout << endl << ">>>>>> Sign up successfully! <<<<<<" << endl;
-
 	}
 	fi.close();
 	fo.close();

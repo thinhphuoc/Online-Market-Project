@@ -132,7 +132,7 @@ void Admin::Welcome() {
 
 ///////////////////////////////////////////////////////
 // chay cac chuc nang cua admin o day nhaaaa
-// a la admin nhe
+// a la admin da login
 void Run_program_of_admin(Admin a) {
 	system("cls");
 	a.Welcome();

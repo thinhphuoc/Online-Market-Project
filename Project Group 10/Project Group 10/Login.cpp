@@ -6,8 +6,9 @@
 void Login() {
 	system("cls");
 	int n;
-	string fullname, username, password, address, gender;
+	string fullname, username, password, address, gender,phoneNum;
 	int age;
+	int numDay;
 	float money;
 	User* Infor_user;
 	Admin* Infor_admin;
@@ -42,11 +43,13 @@ void Login() {
 			fi >> age;
 			fi.ignore();
 			getline(fi, gender);
+			getline(fi, phoneNum);
 			getline(fi, address);
 			fi >> money;
+			fi >> numDay;
 			getline(fi, s);
 			getline(fi, s);
-			Infor_user[i].SaveInforUser(fullname, username, password, age, gender, address, money);
+			Infor_user[i].SaveInforUser(fullname, username, password, age, gender,phoneNum, address, money,numDay);
 		}
 		fi.close();
 	}
